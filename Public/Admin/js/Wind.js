@@ -718,10 +718,11 @@ Wind.ready(function () {
             //validate: 'util_libs/validate',
             ////native js util plugs
             //ajaxFileUpload: 'util_libs/ajaxFileUpload'
-            //dialog: 'util_libs/dialog/dialog',
-            //draggable: 'util_libs/draggable/draggable'
             layer: 'util_libs/layer/layer',
-            datePicker: 'util_libs/datePicker/datePicker'
+            datePicker: 'util_libs/datePicker/datePicker',
+            dialog: 'util_libs/dialog/dialog',
+            draggable: 'util_libs/draggable/draggable',
+            ajaxForm: 'util_libs/ajaxForm/ajaxForm'
 
         },
         alias_css = {

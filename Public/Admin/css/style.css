@@ -691,6 +691,111 @@ a:hover {
 
 /*
 ===================
+操作提示
+===================
+*/
+.tips,
+.tips_block span {
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.tips {
+    border: 1px solid #f4d5ba;
+    background: #ffffe9;
+}
+
+.tips_error,
+.tips_success,
+.tips_loading {
+    color: #cc3333;
+    padding-left: 18px;
+    background: url(../images/tips_follow.png) -20px 2px no-repeat;
+    display: inline-block;
+    line-height: 18px;
+}
+
+.tips_loading {
+    background: url(../images/loading.gif) 0 center no-repeat;
+    color: #333333;
+}
+
+.tips_success {
+    color: #008800;
+    background-position: 0 -19px;
+}
+
+.tips_block .tips_error {
+    background: #cc3333;
+    color: #fff;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.tips_block .tips_success {
+    background: #008800;
+    color: #fff;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.tips_light {
+    padding: 5px 10px 5px 28px;
+    line-height: 25px;
+    border: 1px solid #f4d5ba;
+    /*background: #ffffe9 url(../images/tips/light_mini.png) 8px 10px no-repeat;*/
+    margin-bottom: 10px;
+}
+
+/*气泡弹出提示*/
+.tips_bubble {
+    z-index: 1;
+    position: absolute;
+    margin-top: 45px;
+    line-height: 1.5;
+    color: #666;
+    padding: 10px 10px;
+    border: 1px solid #f4d1a5;
+    background-color: #fffbe7;
+    width: 180px;
+    margin-left: 30px;
+}
+
+/*下箭头*/
+.tips_bubble .core_arrow_bottom {
+    position: absolute;
+    bottom: 9px;
+    right: 10px;
+    padding: 0 20px;
+}
+
+.tips_bubble .core_arrow_bottom span,
+.tips_bubble .core_arrow_bottom em {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 9px 0 0 2px;
+    border-bottom: 8px transparent dashed;
+    border-right: 8px transparent dashed;
+    border-left: 8px transparent dashed;
+    overflow: hidden;
+}
+
+.tips_bubble .core_arrow_bottom span {
+    border-top: 8px #fffbe7 solid;
+}
+
+.tips_bubble .core_arrow_bottom em {
+    border-top: 8px #f4d1a5 solid;
+    margin-top: 10px;
+}
+
+/*
+===================
 全局弹窗
 *pop_top 头
 	**strong 标题
@@ -704,8 +809,10 @@ a:hover {
 */
 .core_pop_wrap {
     background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow:1px 8px 10px 1px #9b9b9b;
+    border-radius:1px;
+    behavior:url(js/pie.htc);
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);*/
     border-radius: 3px;
     position: fixed;
     _position: absolute; /*ie6*/
@@ -723,7 +830,7 @@ a:hover {
     padding: 9px 0 8px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #e7e7e7;
-    background: #f6f6f6;
+    background: url(../images/tcbg.gif) repeat-x;
     zoom: 1;
     margin-bottom: 5px;
 }
@@ -740,7 +847,7 @@ a:hover {
 .pop_top strong {
     text-indent: 15px;
     font-size: 14px;
-    color: #333;
+    color: #fff;
     font-weight: 700;
     white-space: nowrap;
     margin-right: 10px;
@@ -777,6 +884,7 @@ a:hover {
 
 .pop_top .pop_close {
     margin-right: 15px;
+    color: #fff;
 }
 
 .pop_bottom {
@@ -828,7 +936,8 @@ a:hover {
     line-height: 26px;
     vertical-align: top;
     white-space: nowrap;
-    padding-right: 20px;
+    text-align: center;
+    padding-right: 8px;
     font-weight: bold;
 }
 
@@ -846,19 +955,17 @@ a:hover {
 
 /*关闭*/
 .pop_close {
-    margin-top: 5px;
+    display: block;
     float: right;
-    width: 9px;
-    height: 8px;
-    overflow: hidden;
-    text-indent: -2000em;
-    /*background: url(../images/content/close.png) no-repeat;*/
+    width: 22px;
+    height: 22px;
+    background: url(../images/close.png) no-repeat;
     -webkit-transition: all 0.2s ease-out;
     margin-left: 10px;
 }
 
 .pop_close:hover {
-    background-position: 0 -8px;
+    background: url(../images/close1.png) no-repeat;
 }
 
 /*读取中*/
