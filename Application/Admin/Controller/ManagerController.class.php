@@ -8,8 +8,8 @@
 namespace Admin\Controller;
 
 
-use Think\Controller;
 
-class ManagerController extends Controller{
+
+class ManagerController extends BaseController{
 
 }

@@ -1,14 +1,16 @@
 <layout name="Layout/base_layout"  replace="{__CONTENT__}" />
 
-<script type="text/javascript">
-    $(function(){
-        //顶部导航切换
-        $(".nav li a").click(function(){
-            $(".nav li a.selected").removeClass("selected")
-            $(this).addClass("selected");
+<block name="script">
+    <script type="text/javascript">
+        $(function(){
+            //顶部导航切换
+            $(".nav li a").click(function(){
+                $(".nav li a.selected").removeClass("selected")
+                $(this).addClass("selected");
+            })
         })
-    })
-</script>
+    </script>
+</block>
 
 <body style="background:url(__IMG__/topbg.gif) repeat-x;">
 

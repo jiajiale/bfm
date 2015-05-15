@@ -6,7 +6,8 @@
  * e-mail: admin@uimaker.com
  */
 *{font-size:9pt;border:0;margin:0;padding:0;}
-body{font-family:'微软雅黑'; margin:0 auto;min-width:980px;}
+html {height: 100%;overflow: hidden;}
+body{font-family:'微软雅黑'; margin:0 auto;min-width:980px;padding: 88px 0 0 187px;height: 100%;}
 ul{display:block;margin:0;padding:0;list-style:none;}
 li{display:block;margin:0;padding:0;list-style: none;}
 img{border:0;}
@@ -49,7 +50,7 @@ h2{font-weight:normal;}
 
 
 /*top.html*/
-.header{height:88px;}
+.header{position: fixed;top:0px;left:0px;z-index: 1000;width: 100%;height:88px;background: url("../images/topbg.gif") repeat-x;}
 .topleft{height:88px;background:url(../images/topleft.jpg) no-repeat;float:left; width:300px;}
 .topleft img{margin-top:12px;margin-left:10px;}
 .topright{height:88px;background:url(../images/topright.jpg) no-repeat right;float:right;}
@@ -74,6 +75,7 @@ h2{font-weight:normal;}
 .user i{display:inline-block;margin-right:5px;font-style:normal;line-height:30px; font-size:14px;color:#b8ceda;}
 
 /*left.html*/
+.sidebar{position:fixed;left: 0px;z-index: 2;display: block;width:187px;height: 100%;}
 .lefttop{background:url(../images/lefttop.gif) repeat-x;height:40px;color:#fff;font-size:14px;line-height:40px;}
 .lefttop span{margin-left:8px; margin-top:10px;margin-right:8px; background:url(../images/leftico.png) no-repeat; width:20px; height:21px;float:left;}
 .leftmenu{width:187px;padding-bottom: 9999px;margin-bottom: -9999px; overflow:hidden; background:url(../images/leftline.gif) repeat-y right;}
@@ -93,6 +95,7 @@ h2{font-weight:normal;}
 
 
 /*right.html*/
+.main{height: 100%;}
 .place{height:40px; background:url(../images/righttop.gif) repeat-x;}
 .place span{line-height:40px; font-weight:bold;float:left; margin-left:12px;}
 .placeul li{float:left; line-height:40px; padding-left:7px; padding-right:12px; background:url(../images/rlist.gif) no-repeat right;}

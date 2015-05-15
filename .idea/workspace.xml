@@ -2,223 +2,237 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34f621f2-0e49-4566-9a4d-d6144d2bf711" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Behavior/ActionLogBehavior.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Data/BaseData.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/BaseModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Behavior.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Data/ManagerData.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Layout/base_layout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Public/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Common/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Index/left.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Index/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Conf/tags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Index/top.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/15_05_06.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/15_05_06.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/skin/default/icon-ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/skin/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/skin/default/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/skin/default/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/skin/default/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/MenuController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/Wind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Menu/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/head.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Menu/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/skin/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/skin/layer.ext.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/extend/layer.ext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/layer.js" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\PIE.htc" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\format+zh_CN,default,corechart.I.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\jquery.ba-resize.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\jquery.gvChart-1.0.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\jquery.idTabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\jsapi.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\select-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Cache\Admin\b39761fdd01eadcd4b8a82f371520558.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Cache\Admin\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Cache\Home\b39761fdd01eadcd4b8a82f371520558.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Cache\Home\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Cache\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Data\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Logs\Admin\15_05_06.log" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Logs\Admin\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Logs\Home\15_05_06.log" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Logs\Home\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Logs\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\WEB\php\bfm\Application\Runtime\Temp\index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Behavior/ActionLogBehavior.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Behavior/ActionLogBehavior.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Default/Index/left.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Index/left.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Default/Index/top.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Index/top.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\css\select.css" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/css/select.css" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\css\style.css" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/css/style.css" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\kindeditor.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/kindeditor.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\about.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/about.html" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_01.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_01.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_02.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_02.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_03.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_03.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_04.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_04.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_05.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_05.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_06.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_06.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_07.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_07.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_08.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_08.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_09.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_09.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_10.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_10.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_11.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_11.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_12.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_12.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_13.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_13.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_14.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_14.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_15.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_15.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_16.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_16.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_17.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_17.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_18.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_18.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_19.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_19.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_20.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_20.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_21.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_21.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_22.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_22.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_23.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_23.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_24.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_24.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_25.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_25.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_26.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_26.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_27.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_27.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_28.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_28.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_29.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_29.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_30.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_30.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_31.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_31.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_32.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_32.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_33.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_33.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_34.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_34.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_35.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_35.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\emoticons\etc_36.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/emoticons/etc_36.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\flash.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/flash.html" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\image.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/image.html" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\link.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/link.html" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\media.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/media.html" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\plainpaste.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/plainpaste.html" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\remote_image.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/remote_image.html" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\plugins\wordpaste.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/plugins/wordpaste.html" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\default.css" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/default.css" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\default.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/default.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\div.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/div.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\dl.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/dl.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\editor.css" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/editor.css" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\ol.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/ol.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\p.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/p.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\tinymce.css" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/tinymce.css" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\tinymce.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/tinymce.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\editor\skins\ul.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/editor/skins/ul.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\001.jpg" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/001.jpg" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\404.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/404.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\add.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/add.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\btnbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/btnbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\btnbg1.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/btnbg1.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\btnbg2.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/btnbg2.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\buttonbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/buttonbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\c01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/c01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\c02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/c02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\c03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/c03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\cbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/cbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\clist.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/clist.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\close.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/close.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\close1.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/close1.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\cloud.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/cloud.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\d01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/d01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\d02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/d02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\d03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/d03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\d04.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/d04.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\d05.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/d05.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\d06.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/d06.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\d07.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/d07.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\diskbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/diskbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\dp.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/dp.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\f01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/f01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\f02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/f02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\f03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/f03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\f04.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/f04.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\f05.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/f05.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\f06.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/f06.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\help.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/help.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i04.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i04.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i05.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i05.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i06.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i06.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i07.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i07.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i08.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i08.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\i09.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/i09.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\iadd.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/iadd.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ibtnbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ibtnbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ico01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ico01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ico02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ico02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ico03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ico03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ico04.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ico04.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ico05.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ico05.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ico06.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ico06.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\icon01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/icon01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\icon02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/icon02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\icon03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/icon03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\icon04.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/icon04.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\icon05.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/icon05.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\icon06.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/icon06.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img04.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img04.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img05.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img05.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img06.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img06.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img07.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img07.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img08.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img08.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img09.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img09.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img10.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img10.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img11.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img11.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img12.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img12.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img13.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img13.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img14.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img14.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\img15.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/img15.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\inputbg.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/inputbg.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\itabbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/itabbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\itabbg1.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/itabbg1.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\leftico.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/leftico.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\leftico01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/leftico01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\leftico02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/leftico02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\leftico03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/leftico03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\leftico04.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/leftico04.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\leftline.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/leftline.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\leftmenubg.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/leftmenubg.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\lefttop.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/lefttop.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\libg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/libg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\light.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/light.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\line.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/line.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\line1.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/line1.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\list.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/list.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\list1.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/list1.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\list2.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/list2.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\loginbg1.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/loginbg1.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\loginbg2.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/loginbg2.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\loginbg3.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/loginbg3.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\logininfo.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/logininfo.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\loginlogo.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/loginlogo.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\loginpassword.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/loginpassword.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\loginsj.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/loginsj.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\loginuser.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/loginuser.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\logo.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/logo.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\msg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/msg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\navbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/navbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\next.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/next.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\pre.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/pre.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\px.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/px.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\righttop.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/righttop.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\rlist.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/rlist.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\search.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/search.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\sj.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/sj.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\sun.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/sun.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\t01.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/t01.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\t02.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/t02.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\t03.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/t03.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\t04.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/t04.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\t05.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/t05.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\tbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/tbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\tcbg.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/tcbg.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\th.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/th.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ticon.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ticon.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\time.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/time.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\toolbg.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/toolbg.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\topbg.gif" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/topbg.gif" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\topleft.jpg" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/topleft.jpg" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\topright.jpg" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/topright.jpg" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ub1.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ub1.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\uew_icon.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/uew_icon.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\uew_icon_hover.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/uew_icon_hover.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\ulist.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/ulist.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\user.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/user.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\images\userbg.png" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/images/userbg.png" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\PIE.htc" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/PIE.htc" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\cloud.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/cloud.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\format+zh_CN,default,corechart.I.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/format+zh_CN,default,corechart.I.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\jquery.ba-resize.min.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/jquery.ba-resize.min.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\jquery.gvChart-1.0.1.min.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/jquery.gvChart-1.0.1.min.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\jquery.idTabs.min.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/jquery.idTabs.min.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\jquery.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/jquery.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\jsapi.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/jsapi.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\js\select-ui.min.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/select-ui.min.js" />
-      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Public\src\jquery.gvChart-1.0.1.js" afterPath="$PROJECT_DIR$/Application/Admin/View/Default/Common/src/jquery.gvChart-1.0.1.js" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\css\select.css" afterPath="$PROJECT_DIR$/Public/Admin/css/select.css" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\css\style.css" afterPath="$PROJECT_DIR$/Public/Admin/css/style.css" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\kindeditor.js" afterPath="$PROJECT_DIR$/Public/Admin/editor/kindeditor.js" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\about.html" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/about.html" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_01.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_01.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_02.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_02.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_03.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_03.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_04.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_04.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_05.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_05.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_06.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_06.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_07.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_07.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_08.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_08.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_09.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_09.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_10.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_10.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_11.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_11.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_12.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_12.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_13.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_13.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_14.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_14.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_15.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_15.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_16.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_16.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_17.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_17.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_18.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_18.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_19.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_19.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_20.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_20.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_21.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_21.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_22.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_22.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_23.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_23.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_24.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_24.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_25.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_25.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_26.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_26.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_27.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_27.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_28.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_28.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_29.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_29.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_30.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_30.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_31.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_31.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_32.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_32.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_33.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_33.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_34.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_34.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_35.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_35.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\emoticons\etc_36.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/emoticons/etc_36.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\flash.html" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/flash.html" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\image.html" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/image.html" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\link.html" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/link.html" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\media.html" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/media.html" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\plainpaste.html" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/plainpaste.html" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\remote_image.html" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/remote_image.html" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\plugins\wordpaste.html" afterPath="$PROJECT_DIR$/Public/Admin/editor/plugins/wordpaste.html" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\default.css" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/default.css" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\default.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/default.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\div.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/div.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\dl.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/dl.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\editor.css" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/editor.css" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\ol.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/ol.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\p.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/p.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\tinymce.css" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/tinymce.css" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\tinymce.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/tinymce.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\editor\skins\ul.gif" afterPath="$PROJECT_DIR$/Public/Admin/editor/skins/ul.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\001.jpg" afterPath="$PROJECT_DIR$/Public/Admin/images/001.jpg" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\404.png" afterPath="$PROJECT_DIR$/Public/Admin/images/404.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\add.png" afterPath="$PROJECT_DIR$/Public/Admin/images/add.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\btnbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/btnbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\btnbg1.png" afterPath="$PROJECT_DIR$/Public/Admin/images/btnbg1.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\btnbg2.png" afterPath="$PROJECT_DIR$/Public/Admin/images/btnbg2.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\buttonbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/buttonbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\c01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/c01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\c02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/c02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\c03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/c03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\cbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/cbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\clist.png" afterPath="$PROJECT_DIR$/Public/Admin/images/clist.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\close.png" afterPath="$PROJECT_DIR$/Public/Admin/images/close.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\close1.png" afterPath="$PROJECT_DIR$/Public/Admin/images/close1.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\cloud.png" afterPath="$PROJECT_DIR$/Public/Admin/images/cloud.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\d01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/d01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\d02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/d02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\d03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/d03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\d04.png" afterPath="$PROJECT_DIR$/Public/Admin/images/d04.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\d05.png" afterPath="$PROJECT_DIR$/Public/Admin/images/d05.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\d06.png" afterPath="$PROJECT_DIR$/Public/Admin/images/d06.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\d07.png" afterPath="$PROJECT_DIR$/Public/Admin/images/d07.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\diskbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/diskbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\dp.png" afterPath="$PROJECT_DIR$/Public/Admin/images/dp.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\f01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/f01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\f02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/f02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\f03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/f03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\f04.png" afterPath="$PROJECT_DIR$/Public/Admin/images/f04.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\f05.png" afterPath="$PROJECT_DIR$/Public/Admin/images/f05.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\f06.png" afterPath="$PROJECT_DIR$/Public/Admin/images/f06.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\help.png" afterPath="$PROJECT_DIR$/Public/Admin/images/help.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i04.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i04.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i05.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i05.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i06.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i06.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i07.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i07.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i08.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i08.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\i09.png" afterPath="$PROJECT_DIR$/Public/Admin/images/i09.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\iadd.png" afterPath="$PROJECT_DIR$/Public/Admin/images/iadd.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ibtnbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ibtnbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ico01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ico01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ico02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ico02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ico03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ico03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ico04.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ico04.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ico05.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ico05.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ico06.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ico06.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\icon01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/icon01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\icon02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/icon02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\icon03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/icon03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\icon04.png" afterPath="$PROJECT_DIR$/Public/Admin/images/icon04.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\icon05.png" afterPath="$PROJECT_DIR$/Public/Admin/images/icon05.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\icon06.png" afterPath="$PROJECT_DIR$/Public/Admin/images/icon06.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img04.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img04.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img05.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img05.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img06.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img06.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img07.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img07.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img08.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img08.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img09.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img09.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img10.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img10.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img11.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img11.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img12.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img12.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img13.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img13.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img14.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img14.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\img15.png" afterPath="$PROJECT_DIR$/Public/Admin/images/img15.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\inputbg.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/inputbg.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\itabbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/itabbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\itabbg1.png" afterPath="$PROJECT_DIR$/Public/Admin/images/itabbg1.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\leftico.png" afterPath="$PROJECT_DIR$/Public/Admin/images/leftico.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\leftico01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/leftico01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\leftico02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/leftico02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\leftico03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/leftico03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\leftico04.png" afterPath="$PROJECT_DIR$/Public/Admin/images/leftico04.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\leftline.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/leftline.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\leftmenubg.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/leftmenubg.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\lefttop.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/lefttop.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\libg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/libg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\light.png" afterPath="$PROJECT_DIR$/Public/Admin/images/light.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\line.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/line.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\line1.png" afterPath="$PROJECT_DIR$/Public/Admin/images/line1.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\list.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/list.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\list1.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/list1.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\list2.png" afterPath="$PROJECT_DIR$/Public/Admin/images/list2.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\loginbg1.png" afterPath="$PROJECT_DIR$/Public/Admin/images/loginbg1.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\loginbg2.png" afterPath="$PROJECT_DIR$/Public/Admin/images/loginbg2.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\loginbg3.png" afterPath="$PROJECT_DIR$/Public/Admin/images/loginbg3.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\logininfo.png" afterPath="$PROJECT_DIR$/Public/Admin/images/logininfo.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\loginlogo.png" afterPath="$PROJECT_DIR$/Public/Admin/images/loginlogo.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\loginpassword.png" afterPath="$PROJECT_DIR$/Public/Admin/images/loginpassword.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\loginsj.png" afterPath="$PROJECT_DIR$/Public/Admin/images/loginsj.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\loginuser.png" afterPath="$PROJECT_DIR$/Public/Admin/images/loginuser.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\logo.png" afterPath="$PROJECT_DIR$/Public/Admin/images/logo.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\msg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/msg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\navbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/navbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\next.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/next.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\pre.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/pre.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\px.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/px.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\righttop.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/righttop.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\rlist.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/rlist.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\search.png" afterPath="$PROJECT_DIR$/Public/Admin/images/search.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\sj.png" afterPath="$PROJECT_DIR$/Public/Admin/images/sj.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\sun.png" afterPath="$PROJECT_DIR$/Public/Admin/images/sun.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\t01.png" afterPath="$PROJECT_DIR$/Public/Admin/images/t01.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\t02.png" afterPath="$PROJECT_DIR$/Public/Admin/images/t02.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\t03.png" afterPath="$PROJECT_DIR$/Public/Admin/images/t03.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\t04.png" afterPath="$PROJECT_DIR$/Public/Admin/images/t04.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\t05.png" afterPath="$PROJECT_DIR$/Public/Admin/images/t05.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\tbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/tbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\tcbg.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/tcbg.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\th.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/th.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ticon.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ticon.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\time.png" afterPath="$PROJECT_DIR$/Public/Admin/images/time.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\toolbg.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/toolbg.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\topbg.gif" afterPath="$PROJECT_DIR$/Public/Admin/images/topbg.gif" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\topleft.jpg" afterPath="$PROJECT_DIR$/Public/Admin/images/topleft.jpg" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\topright.jpg" afterPath="$PROJECT_DIR$/Public/Admin/images/topright.jpg" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ub1.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ub1.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\uew_icon.png" afterPath="$PROJECT_DIR$/Public/Admin/images/uew_icon.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\uew_icon_hover.png" afterPath="$PROJECT_DIR$/Public/Admin/images/uew_icon_hover.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\ulist.png" afterPath="$PROJECT_DIR$/Public/Admin/images/ulist.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\user.png" afterPath="$PROJECT_DIR$/Public/Admin/images/user.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\images\userbg.png" afterPath="$PROJECT_DIR$/Public/Admin/images/userbg.png" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\cloud.js" afterPath="$PROJECT_DIR$/Public/Admin/js/cloud.js" />
+      <change type="MOVED" beforePath="E:\WEB\php\bfm\Application\Admin\View\Default\Common\src\jquery.gvChart-1.0.1.js" afterPath="$PROJECT_DIR$/Public/Admin/src/jquery.gvChart-1.0.1.js" />
     </list>
     <ignored path="bfm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -243,76 +257,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PublicController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48939928" vertical-offset="165" max-vertical-offset="884">
-              <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="3196">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Menu/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="3145">
+              <caret line="17" column="97" selection-start-line="17" selection-start-column="97" selection-end-line="17" selection-end-column="97" />
               <folding>
-                <element signature="e#6#86#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Menu/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="442">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/BaseController.class.php">
+      <file leaf-file-name="MenuController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/MenuController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="289">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="408">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Common/functions.php">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Public/Admin/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.43638393" vertical-offset="0" max-vertical-offset="896">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Admin/js/util_libs/layer/layer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+              <caret line="1" column="14742" selection-start-line="1" selection-start-column="14742" selection-end-line="1" selection-end-column="14742" />
               <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tags.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/tags.php">
+      <file leaf-file-name="head.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Admin/js/head.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="12075" max-vertical-offset="20213">
+              <caret line="749" column="45" selection-start-line="749" selection-start-column="45" selection-end-line="749" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/common.php">
+      <file leaf-file-name="Wind.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Admin/js/Wind.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.384615" vertical-offset="304" max-vertical-offset="1173">
-              <caret line="54" column="18" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionLogBehavior.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Behavior/ActionLogBehavior.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-21.366667" vertical-offset="12058" max-vertical-offset="13464">
+              <caret line="747" column="12" selection-start-line="747" selection-start-column="4" selection-end-line="747" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -320,30 +346,18 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="901">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state vertical-scroll-proportion="-22.192308" vertical-offset="52" max-vertical-offset="935">
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Behavior.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Behavior.class.php">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="493">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding>
-                <element signature="e#6#80#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="left.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/left.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="1938">
-              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="374">
+              <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -360,26 +374,40 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Default/Layout/base_layout.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Default/Public/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Public/footer.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Default/Layout/login_layout.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Index/top.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Default/Index/main.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Common/functions.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Data/ManagerData.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Data/BaseData.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/BaseModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/BaseController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Behavior/InitHookBehavior.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Index/left.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Conf/tags.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Behavior/ActionLogBehavior.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Index/top.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Menu/list.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Index/left.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/util_libs/common.js" />
+        <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Public/base.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Public/footer.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/Wind.js" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/head.js" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Common/js/common.js" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Common/css/style.css" />
+        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html" />
+        <option value="$PROJECT_DIR$/Public/Admin/js/util_libs/layer/layer.js" />
+        <option value="$PROJECT_DIR$/Public/Admin/js/Wind.js" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Menu/add.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/MenuController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Default/Menu/index.html" />
+        <option value="$PROJECT_DIR$/Public/Admin/js/common.js" />
       </list>
     </option>
   </component>
@@ -421,6 +449,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -557,6 +586,110 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util_libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util_libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -575,7 +708,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -646,6 +819,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Menu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -749,36 +952,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bfm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bfm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Behavior" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../think" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -786,13 +966,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WEB\php\bfm\ThinkPHP\Library\Think" />
-      <recent name="E:\WEB\php\bfm\Application\Admin\Behavior" />
-      <recent name="E:\WEB\php\bfm\Application\Admin\Conf" />
+      <recent name="E:\WEB\php\bfm\Application\Admin\View\Default\Menu" />
+      <recent name="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js" />
+      <recent name="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js\util_libs" />
       <recent name="E:\WEB\php\bfm\Application\Admin\Controller" />
-      <recent name="E:\WEB\php\bfm\Application\Admin\Data" />
+      <recent name="E:\WEB\php\bfm\ThinkPHP\Library\Think" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WEB\php\bfm\Public\Admin" />
+      <recent name="E:\WEB\php\bfm\Application\Admin\View\Default\Common\js" />
       <recent name="E:\WEB\php\bfm\Application\Admin\View\Default\Common" />
     </key>
   </component>
@@ -861,27 +1043,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26066098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26599148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -904,13 +1086,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Application/Admin/Behavior/ActionLogBehavior.class.php</url>
-          <line>8</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager>
@@ -920,84 +1095,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="238">
-          <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="442">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Layout/base_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="136">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="442">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="255">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="238">
-          <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
@@ -1010,7 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="442">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,7 +1136,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="459">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1056,20 +1152,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="697">
           <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="895">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Common/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5134">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -1092,56 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="442">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="238">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Layout/base_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="136">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="850">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.038462" vertical-offset="453" max-vertical-offset="1309">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="374">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1173,35 +1214,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="340">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="493">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Common/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
+            <element signature="e#6#87#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="895">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1216,15 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.102" vertical-offset="0" max-vertical-offset="663">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/left.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="1938">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,16 +1250,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="493">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
-            <element signature="e#6#80#0#PHP" expanded="true" />
+            <element signature="e#6#80#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="901">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,13 +1267,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05868815" vertical-offset="51" max-vertical-offset="5185">
           <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.384615" vertical-offset="304" max-vertical-offset="1173">
+        <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1173">
           <caret line="54" column="18" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="18" />
           <folding />
         </state>
@@ -1279,8 +1280,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Behavior/ActionLogBehavior.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1303,11 +1304,207 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PublicController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48939928" vertical-offset="165" max-vertical-offset="884">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="884">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="175865">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1989">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="19" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="153">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="255">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="884">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-38.846153" vertical-offset="146" max-vertical-offset="1309">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Layout/base_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/util_libs/layer/extend/layer.ext.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01992966" vertical-offset="0" max-vertical-offset="853">
+          <caret line="1" column="379" selection-start-line="1" selection-start-column="375" selection-end-line="1" selection-end-column="379" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="493">
+          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/util_libs/layer/skin/layer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="883">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.466667" vertical-offset="0" max-vertical-offset="5185">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <marker date="1431609199012" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/head.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12075" max-vertical-offset="20213">
+          <caret line="749" column="45" selection-start-line="749" selection-start-column="45" selection-end-line="749" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/util_libs/layer/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <caret line="1" column="14742" selection-start-line="1" selection-start-column="14742" selection-end-line="1" selection-end-column="14742" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="374">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/Wind.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.366667" vertical-offset="12058" max-vertical-offset="13464">
+          <caret line="747" column="12" selection-start-line="747" selection-start-column="4" selection-end-line="747" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Public/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.192308" vertical-offset="52" max-vertical-offset="935">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Menu/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/MenuController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="408">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Menu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="3145">
+          <caret line="17" column="97" selection-start-line="17" selection-start-column="97" selection-end-line="17" selection-end-column="97" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Default/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="3196">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43638393" vertical-offset="0" max-vertical-offset="896">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
