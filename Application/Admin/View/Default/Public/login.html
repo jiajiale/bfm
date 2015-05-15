@@ -1,19 +1,19 @@
 <layout name="Layout/base_layout"  replace="{__CONTENT__}" />
 
-<block name="script">
-    <script type="text/javascript" src="__JS__/cloud.js"></script>
 
-    <script language="javascript">
-        $(function(){
+<script type="text/javascript" src="__JS__/cloud.js"></script>
+
+<script language="javascript">
+    $(function(){
+        $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+        $(window).resize(function(){
             $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
-            $(window).resize(function(){
-                $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
-            })
-        });
-    </script>
-</block>
+        })
+    });
+</script>
 
-<body style="background-color:#1c77ac; background-image:url(__IMG__/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+
+<body style="padding:0px;background-color:#1c77ac; background-image:url(__IMG__/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
 
 <div id="mainBody">
     <div id="cloud1" class="cloud"></div>

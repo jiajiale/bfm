@@ -1,5 +1,55 @@
-<layout name="Layout/base_layout"  replace="{__CONTENT__}" />
+<layout name="Layout/dialog_layout"  replace="{__CONTENT__}" />
 
-<body style="padding: 0px;">
-这是添加操作
+<body style="width: 500px;height: 400px;">
+<form class="J_validateForm J_ajaxForm" data-role="list" action="" method="post">
+    <input type="hidden" name="parent" value="$!param.parent" />
+    <div class="pop_cont pop_table" style="height:auto;width:500px;">
+        <table width="100%">
+            <tr>
+                <th>名称</th>
+                <td>
+                    <input type="text" name="name" class="input length_4" value="">
+            </tr>
+            <tr>
+                <th>地址</th>
+                <td>
+                    <input type="text" name="url" class="input length_4" value="">
+            </tr>
+            <tr>
+                <th>排序</th>
+                <td>
+                    <input type="text" name="sort" class="input length_4" value="">
+            </tr>
+            <tr>
+                <th>权限编码</th>
+                <td>
+                    <input type="text" name="code" class="input length_6" value="">
+            </tr>
+            <tr>
+                <th>名称</th>
+                <td>
+                    <input type="text" name="name" class="input length_4" value="">
+            </tr>
+            <tr>
+                <th>地址</th>
+                <td>
+                    <input type="text" name="url" class="input length_4" value="">
+            </tr>
+            <tr>
+                <th>排序</th>
+                <td>
+                    <input type="text" name="sort" class="input length_4" value="">
+            </tr>
+            <tr>
+                <th>权限编码</th>
+                <td>
+                    <input type="text" name="code" class="input length_4" value="">
+            </tr>
+        </table>
+    </div>
+    <div class="pop_bottom">
+        <button type="button" class="btn fr" id="J_dialog_close">取消</button>
+        <button type="submit" class="btn btn_submit mr10 fr J_ajax_submit_btn J_validate_btn">提交</button>
+    </div>
+</form>
 </body>

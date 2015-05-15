@@ -687,8 +687,6 @@ Wind.ready(function () {
         ver = win.GV.JS_VERSION.replace(/(\s)/g, '_') || '9.0',
     //定义常用JS组件别名，使用别名加载
         alias = {
-            //datePicker: 'ui_libs/datePicker/datePicker',
-            //dialog: 'ui_libs/dialog/dialog',
             //dragSort: 'ui_libs/dragSort/dragSort',
             //chosen: 'ui_libs/chosen/chosen',
             //colorPicker: 'ui_libs/colorPicker/colorPicker',
@@ -699,7 +697,6 @@ Wind.ready(function () {
             //ajaxForm: 'util_libs/ajaxForm',
             //bgiframe: 'util_libs/bgiframe',
             //dateSelect: 'util_libs/dateSelect',
-            //draggable: 'util_libs/draggable',
             //dragsort: 'util_libs/dragsort',
             //dragUpload: 'util_libs/dragUpload',
             //emailAutoMatch: 'util_libs/emailAutoMatch',
@@ -721,11 +718,15 @@ Wind.ready(function () {
             //validate: 'util_libs/validate',
             ////native js util plugs
             //ajaxFileUpload: 'util_libs/ajaxFileUpload'
-            layer: 'util_libs/layer/layer'
+            //dialog: 'util_libs/dialog/dialog',
+            //draggable: 'util_libs/draggable/draggable'
+            layer: 'util_libs/layer/layer',
+            datePicker: 'util_libs/datePicker/datePicker'
+
         },
         alias_css = {
-            layer: 'util_libs/layer/skin/layer'
-            //datePicker: 'ui_libs/datePicker/style',
+            layer: 'util_libs/layer/skin/layer',
+            datePicker: 'util_libs/datePicker/style'
             //chosen: 'ui_libs/chosen/chosen'
         };
 
