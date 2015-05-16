@@ -7,9 +7,6 @@
  */
 namespace Admin\Controller;
 
-
-
-
 class ManagerController extends BaseController{
 
 }
