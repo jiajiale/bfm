@@ -11,17 +11,35 @@ class RequestValidateBehavior extends Behavior {
         $params = I('post.');
 
         if($params != null && count($params) > 0){
+            //读取验证规则
             $ruleClass =  '\\Admin\\Rules\\'.CONTROLLER_NAME.'Rule';
-            $rules = $ruleClass::$_validate;
 
-            $test = validate::test($params,$rules);
+            if(class_exists($ruleClass)){
 
-            if(is_array($test)){
-                $data['state'] = 'fail';
-                $data['message'] = current($test);
-                header('Content-Type:application/json; charset=utf-8');
-                exit(json_encode($data,0));
+                if(property_exists($ruleClass,'_validate')){
+                    $rules = $ruleClass::$_validate;
+
+                    //判断验证规则中是否有对应方法的规则
+                    if(in_array(strtolower(ACTION_NAME),array_keys($rules))){
+                        $methodRule = array_merge($rules['default'],$rules[strtolower(ACTION_NAME)]);
+                    }else{
+                        $methodRule = $rules['default'];
+                    }
+
+                    //根据验证规则验证请求参数
+                    $test = validate::test($params,$methodRule);
+
+                    //验证失败json格式返回验证不通过的结果
+                    if(is_array($test)){
+                        $data['state'] = 'fail';
+                        $data['message'] = current($test);
+                        header('Content-Type:application/json; charset=utf-8');
+                        exit(json_encode($data,0));
+                    }
+                }
+
             }
+
         }
 
     }

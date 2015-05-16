@@ -11,13 +11,17 @@ namespace Admin\Controller;
 class MenuController extends BaseController{
 
     public function _initialize(){
-
+        $this->menuLogic = D('Menu', 'Logic');
     }
 
     /**
      * 数据列表
      */
     public function index(){
+        $conditions = $this->getAvailableData();
+        $menuList = $this->menuLogic->getList($conditions);
+
+        $this->assign("menuList",$menuList);
         $this->display();
     }
 
@@ -47,10 +51,10 @@ class MenuController extends BaseController{
      * 添加操作
      */
     public function do_add(){
-        $params = I('post.');
-        $data['state']  = 'success';
-        $data['message'] = '提交成功';
-        $this->ajaxReturn($data);
+        $data = $this->getAvailableData();
+        $result = $this->menuLogic->saveMenu($data);
+
+        $this->ajaxAuto($result,'添加');
     }
 
     /**

@@ -42,7 +42,6 @@ class Validate {
               break;
             }
         }
-
         if(!$passed) break;
     }
 
@@ -62,6 +61,12 @@ class Validate {
     $pattern = '{^([a-z]+)(?:(?:[(](.*?)[)]) | (?:[:]\s+(.*?)))?$}xi';
 
     foreach($rule as $key => $val) {
+
+        if(is_numeric($key)){
+            $key = $val;
+            $val = null;
+        }
+
         if(preg_match( $pattern, $key, $m)){
 
           if(isset($m[2]) && !empty($m[2])) {
