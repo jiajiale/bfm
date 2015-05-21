@@ -1220,12 +1220,20 @@ a:hover {
     color:#737373;
 }
 .pagepre{
-    background:url(../images/pre.gif) no-repeat center center;
+    display: block;
+    background:url(../images/pre.png) no-repeat center center;
     width:31px;
     height:28px;
 }
 .pagenext{
+    display: block;
     background:url(../images/next.gif) no-repeat center center;
     width:31px;
     height:28px;
+}
+.pageList li.current{
+    background: rgb(59,149,200);
+}
+.pageList li.current a{
+    color: #fff;
 }

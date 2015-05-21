@@ -14,8 +14,8 @@ class MenuLogic extends BaseLogic{
         $this->menuData = D('Menu', 'Data');
     }
 
-    public function getList($conditions,$pageBounds = null){
-        return $this->menuData->getList($conditions,$pageBounds);
+    public function getList($conditions,$pagePara = null){
+        return $this->menuData->getList($conditions,$pagePara);
     }
 
     /**

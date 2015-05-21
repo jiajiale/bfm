@@ -19,9 +19,13 @@ class MenuController extends BaseController{
      */
     public function index(){
         $conditions = $this->getAvailableData();
-        $menuList = $this->menuLogic->getList($conditions);
+        $pagePara = get_page_para();
+        $menuList = $this->menuLogic->getList($conditions,$pagePara);
 
-        $this->assign("menuList",$menuList);
+
+        $this->assign("list",$menuList['items']);
+        $this->assign("pager",$menuList['pager']);
+        $this->assign("params",$conditions);
         $this->display();
     }
 

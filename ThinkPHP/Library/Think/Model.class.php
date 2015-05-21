@@ -614,8 +614,10 @@ class Model {
      * @access public
      * @return string
      */
-    public function buildSql() {
-        return  '( '.$this->fetchSql(true)->select().' )';
+    public function buildSql($options = array()) {
+        // 分析表达式
+        $options = $this->_parseOptions($options);
+        return '( '.$this->db->buildSelectSql($options).' )';
     }
 
     /**

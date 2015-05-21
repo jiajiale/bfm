@@ -21,7 +21,7 @@
 
     <div class="tools">
         <ul class="toolbar">
-            <li><span><img src="__IMG__/t01.png" /></span><a href="{:U('menu/add')}" class="J_dialog" title="添加菜单">添加</a></li>
+            <li><span><img src="__IMG__/t01.png" /></span><a href="{:U('add')}" class="J_dialog" title="添加菜单">添加</a></li>
             <li><span><img src="__IMG__/t02.png" /></span>修改</li>
             <li><span><img src="__IMG__/t03.png" /></span>删除</li>
             <li><span><img src="__IMG__/t04.png" /></span>统计</li>
@@ -30,10 +30,9 @@
 
     <div class="h_a">搜索</div>
     <div class="search_type cc mb10">
-        <form action="" method="get">
+        <form action="{:U('index')}" method="get">
             <ul>
-                <li><label>联系人</label><input name="name" type="text" class="input length_2 mr10 J_date" value=""></li>
-                <li><label>测试</label><input name="address" type="text" class="input length_2 mr10" value=""></li>
+                <li><label>菜单名称</label><input name="title" type="text" class="input length_2 mr10" value="{$params.title}"></li>
                 <li><button type="submit" class="btn btn_submit mr20">搜索</button><button type="button" class="btn btn_reset ">重置</button></li>
             </ul>
         </form>
@@ -55,7 +54,7 @@
             </thead>
 
             <tbody>
-            <foreach name="menuList" item="menu" >
+            <foreach name="list" item="menu" >
                 <tr>
                     <td><input name="" type="checkbox" value="" /></td>
                     <td>{$menu.id}</td>
@@ -71,20 +70,7 @@
         </table>
     </div>
 
-    <div class="pages">
-        <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
-        <ul class="pageList">
-            <li class="pageItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
-            <li class="pageItem"><a href="javascript:;">1</a></li>
-            <li class="pageItem current"><a href="javascript:;">2</a></li>
-            <li class="pageItem"><a href="javascript:;">3</a></li>
-            <li class="pageItem"><a href="javascript:;">4</a></li>
-            <li class="pageItem"><a href="javascript:;">5</a></li>
-            <li class="pageItem more"><a href="javascript:;">...</a></li>
-            <li class="pageItem"><a href="javascript:;">10</a></li>
-            <li class="pageItem"><a href="javascript:;"><span class="pagenext"></span></a></li>
-        </ul>
-    </div>
+    <include file="Public:page" />
 
 </div>
 <script type="text/javascript" src="__JS__/common.js"></script>

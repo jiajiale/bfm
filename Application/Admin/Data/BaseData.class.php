@@ -21,13 +21,12 @@ class BaseData extends BaseModel{
     public function selectPage()
     {
         $options = $this->options;
-        $page = new Page();
         $pagePara = $options['page'];
-        $page->setPageIndex($pagePara[0]);
-        $page->setPageSize($pagePara[1]);
+        $page['pager']['index'] = $pagePara[0];
+        $page['pager']['size'] = $pagePara[1];
         $data = $this->select();
         if ($data) {
-            $page->setItems($data);
+            $page['items'] = $data;
         } else {
             return false;
         }
@@ -39,12 +38,15 @@ class BaseData extends BaseModel{
         $sql = 'SELECT COUNT(*) AS item_count FROM' . $sql . 'count_temp';
         $result = $this->query($sql);
         if($result){
-            $page->setItemsCount((int)$result[0]['item_count']);
+            $page['pager']['total'] = (int)$result[0]['item_count'];
         }else{
-            $page->setItemsCount(0);
+            $page['pager']['total'] = 0;
         }
 
-        $page->calcTotalPages(); //计算分页数
+        if (!$page['pager']['size']) {
+            $page['pager']['size'] = 20;
+        }
+        $page['pager']['count'] = ceil($page['pager']['total'] / $page['pager']['size']); //计算分页数
         return $page;
     }
 }

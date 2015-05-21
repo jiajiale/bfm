@@ -29,7 +29,7 @@ class MenuData extends BaseData{
      * @param $pageBounds
      * @return mixed
      */
-    public function getList($conditions,$pageBounds){
+    public function getList($conditions,$pagePara){
 
         $where = array();
 
@@ -58,10 +58,13 @@ class MenuData extends BaseData{
             $where['menu.status'] = array('EQ', $conditions['status']);
         }
 
-        return $this->table('__MENU__ AS menu')
+        $data = $this->table('__MENU__ AS menu')
             ->field('menu.*')
             ->where($where)
-            ->select();
+            ->page($pagePara->pageIndex, $pagePara->pageSize)
+            ->selectPage();
+
+        return $data;
     }
 
 }

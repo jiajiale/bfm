@@ -19,6 +19,9 @@ class BaseController extends Controller {
         $data = array();
 
         $request = I('param.');
+        unset($request['page_index']);
+        unset($request['page_size']);
+
         foreach ($request as $key => $value) {
             if ($value != '') {
                 $data[$key] = $value;

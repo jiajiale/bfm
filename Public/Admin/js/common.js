@@ -70,6 +70,12 @@
         });
     }
 
+    //重置按钮
+    $('.btn_reset').on('click',function(){
+        $('.search_type').find('input,select').filter(function(index){
+            if($(this).attr("type") != "hidden") return true;
+        }).val('');
+    });
 
     //日期选择器
     var dateInput = $("input.J_date")

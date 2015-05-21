@@ -32,11 +32,11 @@ function get_page_para($pageIndex = null, $pageSize = null)
     }
 
     if (!$pageSize) {
-        $pageSize = I('page_size', C('PAGE_SIZE', null, 20));
+        $pageSize = I('page_size', C('PAGE_SIZE', null, 10));
     }
 
     if ($pageSize < 0 && $pageSize > 50) {
-        $pageSize = C('PAGE_SIZE', null, 20);
+        $pageSize = C('PAGE_SIZE', null, 10);
     }
 
     $pagePara = new stdClass();
