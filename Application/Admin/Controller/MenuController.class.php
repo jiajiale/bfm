@@ -47,7 +47,10 @@ class MenuController extends BaseController{
     /**
      * 查看视图
      */
-    public function detail(){
+    public function detail($id){
+        $menu = $this->menuLogic->getById($id);
+
+        $this->assign("menu",$menu);
         $this->display();
     }
 
@@ -73,9 +76,9 @@ class MenuController extends BaseController{
     /**
      * 删除操作
      */
-    public function do_del(){
-        $data['state']  = 'success';
-        $data['message'] = '提交成功';
-        $this->ajaxReturn($data);
+    public function do_del($id){
+        $result = $this->menuLogic->delMenu($id);
+
+        $this->ajaxAuto($result,'删除');
     }
 }

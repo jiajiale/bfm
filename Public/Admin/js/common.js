@@ -53,6 +53,49 @@
         }
     });
 
+    //所有的删除操作，删除数据后刷新页面
+    if ($('a.J_ajax_del').length) {
+        Wind.use('dialog', function () {
+
+            $('.J_ajax_del').on('click', function (e) {
+                e.preventDefault();
+                var $this = $(this), href = $this.prop('href'), msg = $this.data('msg'), pdata = $this.data('pdata');
+                var params = {
+                    message: msg ? msg : '确定要删除吗？',
+                    type: 'confirm',
+                    isMask: false,
+                    follow: $(this),//跟随触发事件的元素显示
+                    onOk: function () {
+                        $.ajax({
+                            url: href,
+                            type: 'post',
+                            dataType: 'json',
+                            data: function () {
+                                if (pdata) {
+                                    pdata = $.parseJSON(pdata.replace(/'/g, '"'));
+                                    return pdata
+                                }
+                            }(),
+                            success: function (data) {
+                                if (data.state === 'success') {
+                                    if (data.referer) {
+                                        location.href = decodeURIComponent(data.referer);
+                                    } else {
+                                        reloadPage(window);
+                                    }
+                                } else if (data.state === 'fail') {
+                                    Wind.dialog.alert(data.message);
+                                }
+                            }
+                        });
+                    }
+                };
+                Wind.dialog(params);
+            });
+
+        });
+    }
+
     //所有加了dialog类名的a链接，自动弹出它的href
     if ($('a.J_dialog').length) {
         Wind.use('dialog', function () {

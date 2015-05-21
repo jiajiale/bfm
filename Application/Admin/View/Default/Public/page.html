@@ -35,15 +35,13 @@
         <if condition="$endIndex lt $pager['count']">
             <assign name="ep" value="$endIndex" />
             <li class="pageItem"><a href="{:U('index',array_merge($params,array('page_index'=>$ep)))}">...</a></li>
-            <li class="pageItem"><a href="{:U('index',array_merge($params,array('page_index'=>'1')))}">{$pager.count}</a></li>
+            <li class="pageItem"><a href="{:U('index',array_merge($params,array('page_index'=>$pager['count'])))}">{$pager.count}</a></li>
         </if>
 
         <if condition="$pager.index lt $pager['count']">
             <li class="pageItem"><a href="{:U('index',array_merge($params,array('page_index'=>($pager['index']+1))))}"><span class="pagenext"></span></a></li>
         </if>
     </ul>
-    {$startIndex}-
-    {$endIndex}-
-    {$p}
+
 </div>
 </if>
