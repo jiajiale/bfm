@@ -10,6 +10,11 @@ namespace Admin\Logic;
 
 class MenuLogic extends BaseLogic{
 
+    /**
+     * @var \Admin\Data\MenuData
+     */
+    protected $menuData;
+
     public function _initialize(){
         $this->menuData = D('Menu', 'Data');
     }

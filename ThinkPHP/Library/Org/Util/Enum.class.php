@@ -250,6 +250,17 @@ abstract class Enum
         return array_keys(self::getConstants());
     }
 
+    public static function getDesc($key){
+        $reflection = new ReflectionClass(get_called_class());
+
+        if($reflection->hasProperty('desc')){
+            $desc  = $reflection->getStaticPropertyValue ('desc');
+            return $desc[$key];
+        }else{
+            return null;
+        }
+
+    }
 
     final public static function getNameByValue($value)
     {
@@ -280,7 +291,7 @@ abstract class Enum
             foreach ($constants as $value) {
                 $names = array_keys($constants, $value, true);
                 if (count($names) > 1) {
-                    $ambiguous[var_export($value, true)] = $names;
+                        $ambiguous[var_export($value, true)] = $names;
                 }
             }
             if ($ambiguous) {

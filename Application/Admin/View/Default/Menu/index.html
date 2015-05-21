@@ -63,7 +63,10 @@
                     <td>{$menu.grade}</td>
                     <td>{$menu.sort}</td>
                     <td>{$menu.status}</td>
-                    <td><a href="{:U('detail',array('id'=>$menu['id']))}" class="tablelink J_dialog" title="查看菜单">[查看]</a>     <a href="{:U('do_del',array('id'=>$menu['id']))}" class="tablelink J_ajax_del" title="删除菜单"> [删除]</a></td>
+                    <td>
+                        <a href="{:U('edit',array('id'=>$menu['id']))}" class="tablelink J_dialog" title="修改菜单">[修改]</a>
+                        <a href="{:U('detail',array('id'=>$menu['id']))}" class="tablelink J_dialog" title="查看菜单">[查看]</a>
+                        <a href="{:U('do_del',array('id'=>$menu['id']))}" class="tablelink J_ajax_del" title="删除菜单"> [删除]</a></td>
                 </tr>
             </foreach>
             </tbody>

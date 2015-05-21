@@ -8,7 +8,14 @@
 namespace Admin\Controller;
 
 
+use Admin\Enum\MenuStatusEnum;
+
 class MenuController extends BaseController{
+
+    /**
+     * @var \Admin\Logic\MenuLogic
+     */
+    protected $menuLogic;
 
     public function _initialize(){
         $this->menuLogic = D('Menu', 'Logic');
@@ -40,7 +47,9 @@ class MenuController extends BaseController{
     /**
      * 编辑视图
      */
-    public function edit(){
+    public function edit($id){
+        $menuStatus = MenuStatusEnum::getConstants();
+
         $this->display();
     }
 
