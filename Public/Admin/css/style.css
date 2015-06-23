@@ -1027,41 +1027,32 @@ a:hover {
     height: 35px;
 }
 
-.nav ul {
-    height: 35px;
-    float: left;
-}
-
-.nav li,
 .nav .return {
     float: left;
 }
 
-.nav li a,
-.nav .return a {
-    float: left;
-    line-height: 35px;
-    padding: 0 15px;
-    text-align: center;
-    font-size: 15px;
-    color: rgb(63,150,201);
+.nav div.form_title{
+    border-bottom:solid 1px #d0dee5;
+    line-height:35px;
+    position:relative;
+    height:35px;
+    margin-bottom:28px;
 }
 
-.nav li a:hover {
-    color: #333;
-    text-decoration: none;
+.nav div.form_title span{
+    font-weight:bold;
+    font-size:14px;
+    border-bottom:solid 3px #66c9f3;
+    float:left;
+    position:absolute;
+    z-index:100;
+    bottom:-1px;
+    padding:0 3px;
+    height:30px;
+    line-height:30px;
 }
-
-.nav li.current a {
-    color: #1e405e;
-    border-bottom: 1px solid #1e405e;
-}
-
 
 .tools{clear:both; height:35px; margin-bottom:8px;}
-.toolbar{float:left;}
-.toolbar li{background:url(../images/toolbg.gif) repeat-x; line-height:33px; height:33px; border:solid 1px #d3dbde; float:left; padding-right:10px; margin-right:5px;border-radius: 3px; behavior:url(js/pie.htc); cursor:pointer;}
-.toolbar li span{float:left; margin-left:10px; margin-right:5px; margin-top:5px;}
 /*
 ===================
 标题栏组
@@ -1237,4 +1228,176 @@ a:hover {
 }
 .pageList li.current a{
     color: #fff;
+}
+
+/*
+===================
+三列列表
+===================
+*/
+.three_list {
+}
+
+.three_list li {
+    float: left;
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.three_list li.all_check {
+    width: 100%;
+    padding-left: 2px;
+}
+
+/*
+===================
+双列列表
+===================
+*/
+.double_list {
+}
+
+.double_list li {
+    float: left;
+    width: 49%;
+    line-height: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.double_list li.all_check {
+    width: 100%;
+}
+
+.double_list li span {
+    padding-left: 20px;
+    color: #666;
+}
+
+.double_list li label span {
+    padding: inherit;
+    color: #666;
+}
+
+/*
+===================
+单选组列表
+===================
+*/
+.single_list li {
+    line-height: 25px;
+    height: 25px;
+}
+
+/*
+===================
+开关选项
+===================
+*/
+.switch_list {
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.switch_list li {
+    float: left;
+    width: 120px;
+}
+
+/*
+===================
+全局选中高亮
+===================
+*/
+input:checked + span {
+    color: #008800 !important;
+}
+
+input:radio + span {
+    color: #008800 !important;
+}
+
+/*
+===================
+功能表格列表
+===================
+*/
+.table_full {
+    margin-bottom: 10px;
+    border: 1px #ccc solid;
+    margin-top: -1px;
+}
+
+.table_full table {
+    table-layout: fixed;
+}
+
+.table_full tr,
+.table_purview tr,
+.table_purview th,
+.table_purview td,
+.nav,
+.prompt_text,
+.search_photo_list,
+.design_ct dl,
+.pop_design_tablelist td,
+.pop_design_tablelist th,
+.table_full tr.tr_checkbox td,
+.search_list dl {
+    border-bottom: 1px solid #ccc;
+}
+.table_list th:last-child,
+.table_full tr:last-child,
+.table_full th:last-child{
+    border-bottom: none;
+}
+
+
+.table_full th {
+    padding: 7px 10px 9px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #e5e3e3;
+    font-weight: normal;
+    line-height: 24px;
+    vertical-align: top;
+}
+
+.table_full .th {
+    width: 160px;
+}
+
+.table_full th .s1 {
+    padding-left: 5px;
+}
+
+.table_full td {
+    padding: 7px 10px 9px 15px;
+    color: #666;
+    vertical-align: top;
+}
+
+.table_full tr:hover th {
+    background-color: #eef3f6;
+}
+
+.table_full tr:hover td {
+    color: #000;
+    background-color: #eef3f6;
+}
+
+.table_full tr .fun_tips {
+    color: #999;
+    line-height: 24px;
+}
+
+.table_full tr:hover .fun_tips {
+    color: #000;
+}
+
+.table_full tr.tr_checkbox th,
+.table_full tr.tr_checkbox td {
+    background-color: #fffaeb;
 }

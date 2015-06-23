@@ -12,6 +12,51 @@ namespace Admin\Data;
 class MenuData extends BaseData{
 
     /**
+     * 获取查询条件
+     * @param $conditions
+     * @return array
+     */
+    public function getCondition($conditions){
+        $where = array();
+
+        if (isset($conditions['id']) && !empty($conditions['id'])) {
+            $where['menu.id'] = array('EQ', $conditions['id']);
+        }
+
+        if (isset($conditions['title']) && !empty($conditions['title'])) {
+            $where['menu.title'] = array('EQ', $conditions['title']);
+        }
+
+        if (isset($conditions['parent']) && !empty($conditions['parent'])) {
+            $where['menu.parent'] = array('EQ', $conditions['parent']);
+        }else{
+            $where['menu.parent'] = array('EQ', 0);
+        }
+
+        if (isset($conditions['path']) && !empty($conditions['path'])) {
+            $where['menu.path'] = array('EQ', $conditions['path']);
+        }
+
+        if (isset($conditions['grade']) && !empty($conditions['grade'])) {
+            $where['menu.grade'] = array('EQ', $conditions['grade']);
+        }
+
+        if (isset($conditions['url']) && !empty($conditions['url'])) {
+            $where['menu.url'] = array('EQ', $conditions['url']);
+        }
+
+        if (isset($conditions['sort']) && !empty($conditions['sort'])) {
+            $where['menu.sort'] = array('EQ', $conditions['sort']);
+        }
+
+        if (isset($conditions['status']) && !empty($conditions['status'])) {
+            $where['menu.status'] = array('EQ', $conditions['status']);
+        }
+
+        return $where;
+    }
+
+    /**
      * 单条记录查找
      * @param $id
      * @return mixed
@@ -31,32 +76,7 @@ class MenuData extends BaseData{
      */
     public function getList($conditions,$pagePara){
 
-        $where = array();
-
-        if (isset($conditions['id'])) {
-            $where['menu.id'] = array('EQ', $conditions['id']);
-        }
-        if (isset($conditions['title'])) {
-            $where['menu.title'] = array('EQ', $conditions['title']);
-        }
-        if (isset($conditions['parent'])) {
-            $where['menu.parent'] = array('EQ', $conditions['parent']);
-        }
-        if (isset($conditions['path'])) {
-            $where['menu.path'] = array('EQ', $conditions['path']);
-        }
-        if (isset($conditions['grade'])) {
-            $where['menu.grade'] = array('EQ', $conditions['grade']);
-        }
-        if (isset($conditions['url'])) {
-            $where['menu.url'] = array('EQ', $conditions['url']);
-        }
-        if (isset($conditions['sort'])) {
-            $where['menu.sort'] = array('EQ', $conditions['sort']);
-        }
-        if (isset($conditions['status'])) {
-            $where['menu.status'] = array('EQ', $conditions['status']);
-        }
+        $where = $this->getCondition($conditions);
 
         $data = $this->table('__MENU__ AS menu')
             ->field('menu.*')
@@ -67,4 +87,28 @@ class MenuData extends BaseData{
         return $data;
     }
 
+    /**
+     * 根据角色id查询菜单项
+     * @param $id
+     * @return mixed
+     */
+    public function getListByRoleId($id){
+        $sql = "SELECT DISTINCT
+                    menu.*
+                FROM
+                    bfm_menu AS menu,
+                    bfm_menu AS menu1
+                        INNER JOIN
+                    bfm_permission AS permission ON menu1.code = permission.code
+                        INNER JOIN
+                    bfm_role_permission_relation AS relation ON relation.permission_id = permission.id
+                        INNER JOIN
+                    bfm_role AS role ON role.id = relation.role_id
+                WHERE
+                    menu1.path LIKE CONCAT(menu.path,'%')
+                AND relation.role_id = " . $id;
+
+        $data = $this->query($sql);
+        return $data;
+    }
 }

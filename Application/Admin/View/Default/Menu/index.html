@@ -14,23 +14,20 @@
 <div class="wrap">
 
     <div class="nav">
-        <ul class="cc">
-            <li class="current"><a href="">菜单管理</a></li>
-        </ul>
+        <div class="form_title">
+            <span>菜单管理</span>
+        </div>
     </div>
 
     <div class="tools">
         <ul class="toolbar">
-            <li><span><img src="__IMG__/t01.png" /></span><a href="{:U('add')}" class="J_dialog" title="添加菜单">添加</a></li>
-            <!--<li><span><img src="__IMG__/t02.png" /></span><a href="{:U('edit')}" class="J_dialog" title="修改菜单">修改</a></li>-->
-            <!--<li><span><img src="__IMG__/t03.png" /></span>删除</li>-->
-            <!--<li><span><img src="__IMG__/t04.png" /></span>统计</li>-->
+            <li><a href="{:U('add',array('parent'=>$parent))}" class="btn J_dialog" title="添加菜单">添加</a></li>
         </ul>
     </div>
 
     <div class="h_a">搜索</div>
     <div class="search_type cc mb10">
-        <form action="{:U('index')}" method="get">
+        <form action="{:U('index',array('parent'=>$parent))}" method="get">
             <ul>
                 <li><label>菜单名称</label><input name="title" type="text" class="input length_2 mr10" value="{$params.title}"></li>
                 <li><button type="submit" class="btn btn_submit mr20">搜索</button><button type="button" class="btn btn_reset ">重置</button></li>
@@ -49,6 +46,7 @@
                 <th>菜单等级</th>
                 <th>菜单排序</th>
                 <th>菜单状态</th>
+                <th>子级菜单</th>
                 <th>操作</th>
             </tr>
             </thead>
@@ -62,7 +60,8 @@
                     <td>{$menu.url}</td>
                     <td>{$menu.grade}</td>
                     <td>{$menu.sort}</td>
-                    <td>{$menu.status}</td>
+                    <td>{$menu.status|\\Common\\Util\\EnumTemplate::getEnumDesc='MenuStatus'}</td>
+                    <td><a href="{:U('index',array('parent'=>$menu['id']))}">[子级菜单]</a></td>
                     <td>
                         <a href="{:U('edit',array('id'=>$menu['id']))}" class="tablelink J_dialog" title="修改菜单">[修改]</a>
                         <a href="{:U('detail',array('id'=>$menu['id']))}" class="tablelink J_dialog" title="查看菜单">[查看]</a>

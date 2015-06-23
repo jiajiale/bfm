@@ -9,15 +9,16 @@ namespace Admin\Controller;
 
 
 
-class MenuController extends BaseController{
+class RolePermissionRelationController extends BaseController{
+
 
     /**
-     * @var \Admin\Logic\MenuLogic
+     * @var \Admin\Logic\RolePermissionRelationLogic
      */
-    protected $menuLogic;
+    protected $rolePermissionRelationLogic;
 
     public function _initialize(){
-        $this->menuLogic = D('Menu', 'Logic');
+        $this->rolePermissionRelationLogic = D('RolePermissionRelation', 'Logic');
     }
 
     /**
@@ -26,21 +27,18 @@ class MenuController extends BaseController{
     public function index(){
         $conditions = $this->getAvailableData();
         $pagePara = get_page_para();
-        $menuList = $this->menuLogic->getList($conditions,$pagePara);
+        $rolePermissionRelationList = $this->rolePermissionRelationLogic->getList($conditions,$pagePara);
 
-        $this->assign("list",$menuList['items']);
-        $this->assign("pager",$menuList['pager']);
+        $this->assign("list",$rolePermissionRelationList['items']);
+        $this->assign("pager",$rolePermissionRelationList['pager']);
         $this->assign("params",$conditions);
-        $this->assign("parent",$conditions['parent']);
         $this->display();
     }
-
 
     /**
      * 添加视图
      */
-    public function add($parent = 0){
-        $this->assign("parent",$parent);
+    public function add(){
         $this->display();
     }
 
@@ -48,9 +46,9 @@ class MenuController extends BaseController{
      * 编辑视图
      */
     public function edit($id){
-        $menu = $this->menuLogic->getById($id);
+        $rolePermissionRelation = $this->rolePermissionRelationLogic->getById($id);
 
-        $this->assign("menu",$menu);
+        $this->assign("permission",$rolePermissionRelation);
         $this->display();
     }
 
@@ -58,9 +56,9 @@ class MenuController extends BaseController{
      * 查看视图
      */
     public function detail($id){
-        $menu = $this->menuLogic->getById($id);
+        $rolePermissionRelation = $this->rolePermissionRelationLogic->getById($id);
 
-        $this->assign("menu",$menu);
+        $this->assign("permission",$rolePermissionRelation);
         $this->display();
     }
 
@@ -69,7 +67,7 @@ class MenuController extends BaseController{
      */
     public function do_add(){
         $data = $this->getAvailableData();
-        $result = $this->menuLogic->saveMenu($data);
+        $result = $this->rolePermissionRelationLogic->saveRolePermissionRelation($data);
 
         $this->ajaxAuto($result,'添加');
     }
@@ -79,7 +77,7 @@ class MenuController extends BaseController{
      */
     public function do_edit(){
         $data = $this->getAvailableData();
-        $result = $this->menuLogic->editMenu($data);
+        $result = $this->rolePermissionRelationLogic->editRolePermissionRelation($data);
 
         $this->ajaxAuto($result,'修改');
     }
@@ -88,7 +86,7 @@ class MenuController extends BaseController{
      * 删除操作
      */
     public function do_del($id){
-        $result = $this->menuLogic->delMenu($id);
+        $result = $this->rolePermissionRelationLogic->delRolePermissionRelation($id);
 
         $this->ajaxAuto($result,'删除');
     }

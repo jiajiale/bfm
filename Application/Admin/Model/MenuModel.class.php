@@ -11,7 +11,7 @@ namespace Admin\Model;
 
 class MenuModel extends BaseModel{
 
-    /* 自动完成规则 */
+    // 自动完成
     protected $_auto = array(
         array('status', 1, self::MODEL_INSERT, 'string'),
     );

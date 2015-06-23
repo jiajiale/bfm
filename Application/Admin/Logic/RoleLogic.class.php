@@ -8,17 +8,16 @@
 
 namespace Admin\Logic;
 
-use Org\Util\TreeBuild;
 
-class MenuLogic extends BaseLogic{
+class RoleLogic extends BaseLogic{
 
     /**
-     * @var \Admin\Data\MenuData
+     * @var \Admin\Data\RoleData
      */
-    protected $menuData;
+    protected $roleData;
 
     public function _initialize(){
-        $this->menuData = D('Menu', 'Data');
+        $this->roleData = D('Role', 'Data');
     }
 
     /**
@@ -27,7 +26,7 @@ class MenuLogic extends BaseLogic{
      * @return mixed
      */
     public function getById($id){
-        return $this->menuData->getById($id);
+        return $this->roleData->getById($id);
     }
 
     /**
@@ -37,7 +36,7 @@ class MenuLogic extends BaseLogic{
      * @return mixed
      */
     public function getList($conditions,$pagePara = null){
-        return $this->menuData->getList($conditions,$pagePara);
+        return $this->roleData->getList($conditions,$pagePara);
     }
 
     /**
@@ -92,30 +91,6 @@ class MenuLogic extends BaseLogic{
         $Menu = D('Menu');
 
         return $Menu->delete($id);
-    }
-
-    /**
-     * 根据用户的角色获取用户的菜单列表
-     * @param $id
-     * @return mixed
-     */
-    public function getListByRoleId($id){
-        return $this->menuData->getListByRoleId($id);
-    }
-
-    /**
-     * 根据用户的角色获取用户菜单树形结构
-     * @param $id
-     * @return mixed
-     */
-    public function getMenuTreeByRoleId($id){
-        $menuList = $this->getListByRoleId($id);
-
-        $TreeBuild = new TreeBuild($menuList);
-        $TreeBuild->make();
-        $menuTree = $TreeBuild->getResult();
-
-        return $menuTree;
     }
 
 }

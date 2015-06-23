@@ -10,7 +10,6 @@ namespace Common\Util;
 
 
 class EnumTemplate {
-
     /**
      * 枚举类多选模板
      * @param $select
@@ -46,5 +45,28 @@ class EnumTemplate {
         $template .= '</select>';
 
         echo $template;
+    }
+
+    /**
+     * 模板中获取枚举描述
+     * @param $value
+     * @param $enumName
+     */
+    public static function getEnumDesc($value,$enumName){
+        $enumClass = '\\Admin\\Enum\\'.$enumName.'Enum';
+
+        if(class_exists($enumClass)){
+            $enumItems = $enumClass::getConstants();
+
+            if($enumItems){
+                foreach($enumItems as $key=>$val){
+                    if($value == $val){
+                        echo $enumClass::getDesc($key);
+                        break;
+                    }
+                }
+            }
+        }
+
     }
 }

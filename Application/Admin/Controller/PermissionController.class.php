@@ -9,15 +9,16 @@ namespace Admin\Controller;
 
 
 
-class MenuController extends BaseController{
+class PermissionController extends BaseController{
+
 
     /**
-     * @var \Admin\Logic\MenuLogic
+     * @var \Admin\Logic\PermissionLogic
      */
-    protected $menuLogic;
+    protected $permissionLogic;
 
     public function _initialize(){
-        $this->menuLogic = D('Menu', 'Logic');
+        $this->permissionLogic = D('Permission', 'Logic');
     }
 
     /**
@@ -26,21 +27,21 @@ class MenuController extends BaseController{
     public function index(){
         $conditions = $this->getAvailableData();
         $pagePara = get_page_para();
-        $menuList = $this->menuLogic->getList($conditions,$pagePara);
+        $permissionList = $this->permissionLogic->getList($conditions,$pagePara);
 
-        $this->assign("list",$menuList['items']);
-        $this->assign("pager",$menuList['pager']);
+        $this->assign("list",$permissionList['items']);
+        $this->assign("pager",$permissionList['pager']);
         $this->assign("params",$conditions);
-        $this->assign("parent",$conditions['parent']);
         $this->display();
     }
-
 
     /**
      * 添加视图
      */
-    public function add($parent = 0){
-        $this->assign("parent",$parent);
+    public function add(){
+        $modules = $this->permissionLogic->getModules();
+
+        $this->assign('modules',$modules);
         $this->display();
     }
 
@@ -48,9 +49,11 @@ class MenuController extends BaseController{
      * 编辑视图
      */
     public function edit($id){
-        $menu = $this->menuLogic->getById($id);
+        $permission = $this->permissionLogic->getById($id);
+        $modules = $this->permissionLogic->getModules();
 
-        $this->assign("menu",$menu);
+        $this->assign('modules',$modules);
+        $this->assign("permission",$permission);
         $this->display();
     }
 
@@ -58,9 +61,9 @@ class MenuController extends BaseController{
      * 查看视图
      */
     public function detail($id){
-        $menu = $this->menuLogic->getById($id);
+        $permission = $this->permissionLogic->getById($id);
 
-        $this->assign("menu",$menu);
+        $this->assign("permission",$permission);
         $this->display();
     }
 
@@ -69,7 +72,7 @@ class MenuController extends BaseController{
      */
     public function do_add(){
         $data = $this->getAvailableData();
-        $result = $this->menuLogic->saveMenu($data);
+        $result = $this->permissionLogic->savePermission($data);
 
         $this->ajaxAuto($result,'添加');
     }
@@ -79,7 +82,7 @@ class MenuController extends BaseController{
      */
     public function do_edit(){
         $data = $this->getAvailableData();
-        $result = $this->menuLogic->editMenu($data);
+        $result = $this->permissionLogic->editPermission($data);
 
         $this->ajaxAuto($result,'修改');
     }
@@ -88,7 +91,7 @@ class MenuController extends BaseController{
      * 删除操作
      */
     public function do_del($id){
-        $result = $this->menuLogic->delMenu($id);
+        $result = $this->permissionLogic->delPermission($id);
 
         $this->ajaxAuto($result,'删除');
     }
