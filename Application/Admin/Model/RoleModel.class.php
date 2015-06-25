@@ -10,5 +10,8 @@ namespace Admin\Model;
 
 
 class RoleModel extends BaseModel{
-
+    // 自动完成
+    protected $_auto = array(
+        array('status', 1, self::MODEL_INSERT, 'string'),
+    );
 }

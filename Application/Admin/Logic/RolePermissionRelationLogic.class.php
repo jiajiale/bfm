@@ -81,7 +81,23 @@ class RolePermissionRelationLogic extends BaseLogic{
         return $RolePermissionRelation->delete($id);
     }
 
+    /**
+     * 根据角色id查找角色权限
+     * @param $roleId
+     * @return mixed
+     */
     public function getRolePermissions($roleId){
         return $this->rolePermissionRelationData->getRolePermissions($roleId);
+    }
+
+    /**
+     * 根据角色id删除角色权限
+     * @param $roleId
+     * @return mixed
+     */
+    public function deleteRolePermissions($roleId){
+        $RolePermissionRelation = D('RolePermissionRelation');
+
+        return $RolePermissionRelation->where('role_id = %d',$roleId)->delete();
     }
 }

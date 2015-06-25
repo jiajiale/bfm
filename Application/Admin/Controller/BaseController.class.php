@@ -7,9 +7,8 @@ class BaseController extends Controller {
     public function __construct(){
         parent::__construct();
 
-        $this->_initialize();
+        $this->check_login();
     }
-
 
     /**
      * 获取有效数据
@@ -36,7 +35,7 @@ class BaseController extends Controller {
      * @param null $data
      * @param string $msg
      */
-    public function ajaxSuccess($data = null, $msg = '',$code = 200)
+    public function ajaxSuccess($data = null, $msg = '',$referer = '', $code = 200 )
     {
         $ajaxData = array();
         if (!$msg) $msg = "ok";
@@ -45,6 +44,7 @@ class BaseController extends Controller {
         $ajaxData['message'] = $msg;
         $ajaxData['data'] = $data;
         $ajaxData['code'] = $code;
+        $ajaxData['referer'] = $referer;
 
         $this->ajaxReturn($ajaxData);
     }
@@ -54,14 +54,15 @@ class BaseController extends Controller {
      * @param string $msg
      * @param int $code
      */
-    public function ajaxError($msg = '', $code = 300)
+    public function ajaxError($msg = '', $referer = '', $code = 300)
     {
         $ajaxData = array();
         if (!$msg) $msg = "fail";
 
-        $ajaxData['state'] = 'success';
+        $ajaxData['state'] = 'fail';
         $ajaxData['message'] = $msg;
         $ajaxData['code'] = $code;
+        $ajaxData['referer'] = $referer;
 
         $this->ajaxReturn($ajaxData);
     }
@@ -71,11 +72,22 @@ class BaseController extends Controller {
      * @param $flag
      * @param $msg
      */
-    public function ajaxAuto($flag,$msg = '操作'){
+    public function ajaxAuto($flag,$msg = '操作',$referer = ''){
         if($flag !== false){
-            $this->ajaxSuccess(null,$msg.'成功');
+            $this->ajaxSuccess(null,$msg.'成功',$referer);
         }else{
-            $flag->ajaxError($msg.'失败');
+            $this->ajaxError($msg.'失败',$referer);
         }
     }
+
+
+    final public function check_login(){
+        $manager = session('manager_auth');
+        if (empty($manager)) {
+            //$this->redirect('public/index');
+        } else {
+           // return session('user_auth_sign') == data_auth_sign($user) ? $user['uid'] : 0;
+        }
+    }
+
 }

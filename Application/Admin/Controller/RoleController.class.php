@@ -15,6 +15,7 @@ class RoleController extends BaseController{
     /**
      * @var \Admin\Logic\RoleLogic
      * @var \Admin\Logic\PermissionLogic
+     * @var \Admin\Logic\RolePermissionRelationLogic
      */
     protected $roleLogic;
     protected $permissionLogic;
@@ -64,10 +65,12 @@ class RoleController extends BaseController{
      * 编辑视图
      */
     public function edit($id){
+        // 获取用户的权限
         $role_permissions = array_column(
             $this->rolePermissionRelationLogic->getRolePermissions($id),'permission_id');
 
         $modules = $this->permissionLogic->getModules();
+        $role = $this->roleLogic->getById($id);
 
         $modules_list = array();
 
@@ -76,19 +79,23 @@ class RoleController extends BaseController{
 
             foreach($permissions as $itemKey => $itemVal){
                 if(in_array($itemVal['id'],$role_permissions)){
-                    $permissions[$itemKey]['checked'] = true;
+                    $permissions[$itemKey]['checked'] = 'checked';
                 }else{
-                    $permissions[$itemKey]['checked'] = false;
+                    $permissions[$itemKey]['checked'] = '';
                 }
             }
+
+            $flag = count(array_diff(array_column($permissions,'id'),$role_permissions));
 
             $modules_list[] = array(
                 'module_key'  => $key,
                 'module_val'  => $val,
-                'permissions' => $permissions
+                'permissions' => $permissions,
+                'checked'     => $flag ? '' : 'checked'
             );
         }
 
+        $this->assign('role',$role);
         $this->assign('modules_list',$modules_list);
         $this->display();
     }
@@ -108,10 +115,9 @@ class RoleController extends BaseController{
      */
     public function do_add(){
         $data = $this->getAvailableData();
+        $result = $this->roleLogic->saveRole($data);
 
-        //$result = $this->permissionLogic->savePermission($data);
-
-        //$this->ajaxAuto($result,'添加');
+        $this->ajaxAuto($result,'添加',U('role/index'));
     }
 
     /**
@@ -119,16 +125,16 @@ class RoleController extends BaseController{
      */
     public function do_edit(){
         $data = $this->getAvailableData();
-        $result = $this->permissionLogic->editPermission($data);
+        $result = $this->roleLogic->editRole($data);
 
-        $this->ajaxAuto($result,'修改');
+        $this->ajaxAuto($result,'修改',U('role/index'));
     }
 
     /**
      * 删除操作
      */
     public function do_del($id){
-        $result = $this->permissionLogic->delPermission($id);
+        $result = $this->roleLogic->delRole($id);
 
         $this->ajaxAuto($result,'删除');
     }

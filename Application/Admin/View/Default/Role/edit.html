@@ -12,7 +12,8 @@
 </div>
 
 <div class="wrap">
-    <form class="J_validateForm J_ajaxForm" data-role="list" action="{:U('role/do_add')}" method="post">
+    <form class="J_validateForm J_ajaxForm" data-role="list" action="{:U('role/do_edit')}" method="post">
+        <input type="hidden" name="id" value="{$role.id}" />
         <div class="h_a">编辑角色</div>
         <div class="table_full">
             <table width="100%" class="J_check_wrap">
@@ -21,32 +22,32 @@
                 <tr>
                     <th>类型</th>
                     <td>
-                        {$role.type=0|\\Common\\Util\\EnumTemplate::enumSelect='RoleType',false,'type','select'}
+                        {$role.type|\\Common\\Util\\EnumTemplate::enumSelect='RoleType',false,'type','select'}
                     </td>
                 </tr>
                 <tr>
                     <th>名称</th>
                     <td>
-                        <input type="text" name="name" class="input length_4" value="">
+                        <input type="text" name="name" class="input length_4" value="{$role.name}">
                     </td>
                 </tr>
                 <tr>
                     <th>状态</th>
                     <td>
-                        {$role.status=0|\\Common\\Util\\EnumTemplate::enumSelect='RoleStatus',false,'status','select'}
+                        {$role.status|\\Common\\Util\\EnumTemplate::enumSelect='RoleStatus',false,'status','select'}
                     </td>
                 </tr>
 
                 <foreach name="modules_list" item="module">
                     <tr>
-                        <th><label><input name="menus" id="J_role_$key" data-direction="x" data-checklist="J_check_{$module.module_val}"
-                                          type="checkbox" class="checkbox J_check_all"
+                        <th><label><input name="modules[]" id="J_role_$key" data-direction="x" data-checklist="J_check_{$module.module_val}"
+                                          type="checkbox" class="checkbox J_check_all" {$module.checked}
                                           value="{$module.module_val}"><span>{$module.module_key}</span></label></th>
                         <td>
                             <ul data-name="custom" class="three_list cc J_ul_check">
                                 <foreach name="module['permissions']" item="permission">
                                     <li><label><input name="permissions[]" data-xid="J_check_{$module.module_val}" class="J_check"
-                                                      type="checkbox" checked="{$permission.checked}"
+                                                      type="checkbox" {$permission.checked}
                                                       value="{$permission.id}"><span>{$permission.name}</span></label>
                                     </li>
                                 </foreach>

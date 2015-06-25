@@ -48,7 +48,7 @@ class RolePermissionRelationController extends BaseController{
     public function edit($id){
         $rolePermissionRelation = $this->rolePermissionRelationLogic->getById($id);
 
-        $this->assign("permission",$rolePermissionRelation);
+        $this->assign("rolePermissionRelation",$rolePermissionRelation);
         $this->display();
     }
 
@@ -58,7 +58,7 @@ class RolePermissionRelationController extends BaseController{
     public function detail($id){
         $rolePermissionRelation = $this->rolePermissionRelationLogic->getById($id);
 
-        $this->assign("permission",$rolePermissionRelation);
+        $this->assign("rolePermissionRelation",$rolePermissionRelation);
         $this->display();
     }
 

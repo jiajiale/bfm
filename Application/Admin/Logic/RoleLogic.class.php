@@ -13,11 +13,14 @@ class RoleLogic extends BaseLogic{
 
     /**
      * @var \Admin\Data\RoleData
+     * @var \Admin\Data\RolePermissionRelationLogic
      */
     protected $roleData;
+    protected $rolePermissionRelationLogic;
 
     public function _initialize(){
         $this->roleData = D('Role', 'Data');
+        $this->rolePermissionRelationLogic = D('RolePermissionRelation', 'Logic');
     }
 
     /**
@@ -44,24 +47,24 @@ class RoleLogic extends BaseLogic{
      * @param $data
      * @return bool
      */
-    public function saveMenu($data){
+    public function saveRole($data){
 
-        $Menu = D('Menu');
+        $Role = D('Role');
+        $RolePermissionRelation = D('RolePermissionRelation');
 
-        if($Menu->create($data)){
-            $menuId = $Menu->add();
-            $menu = $this->menuData->getById($menuId);
+        if($Role->create($data)){
+            $roleId = $Role->add();
 
-            if($menu['parent'] == 0){
-                $menu['grade'] = 1;
-                $menu['path'] = ',0,'.$menu['id'].',';
-            }else{
-                $parentMenu = $this->menuData->getById($menu['parent']);
-                $menu['grade'] = $parentMenu['grade'] + 1;
-                $menu['path'] = $parentMenu['path'].$menu['id'].',';
+            // 批量插入
+            $map = array();
+            foreach($data['permissions'] as $val){
+                $map[] = array(
+                    'role_id'  =>  $roleId,
+                    'permission_id'  =>  $val
+                );
             }
 
-            return $Menu->save($menu);
+            return $RolePermissionRelation->addAll($map);
         }else{
             return false;
         }
@@ -72,11 +75,33 @@ class RoleLogic extends BaseLogic{
      * @param $data
      * @return bool
      */
-    public function editMenu($data){
-        $Menu = D('Menu');
+    public function editRole($data){
+        $Role = D('Role');
+        $RolePermissionRelation = D('RolePermissionRelation');
 
-        if($Menu->create($data)){
-            return $Menu->save();
+        if($Role->create($data)){
+            $result = $Role->save();
+
+            if($result !== false){
+                $roleId = $data['id'];
+
+                // 删除以前的权限关联
+                $this->rolePermissionRelationLogic->deleteRolePermissions($roleId);
+
+                // 批量插入
+                $map = array();
+                foreach($data['permissions'] as $val){
+                    $map[] = array(
+                        'role_id'  =>  $roleId,
+                        'permission_id'  =>  $val
+                    );
+                }
+
+                return $RolePermissionRelation->addAll($map);
+            }else{
+                return false;
+            }
+
         }else{
             return false;
         }
@@ -87,10 +112,10 @@ class RoleLogic extends BaseLogic{
      * @param $id
      * @return mixed
      */
-    public function delMenu($id){
-        $Menu = D('Menu');
+    public function delRole($id){
+        $Role = D('Role');
 
-        return $Menu->delete($id);
+        return $Role->delete($id);
     }
 
 }

@@ -7,14 +7,18 @@
  */
 namespace Admin\Controller;
 
-class PublicController extends BaseController{
+use Think\Controller;
+
+class PublicController extends Controller{
+
+    /**
+     * @var \Admin\Logic\RoleLogic
+     */
+    protected $managerAccountLogic;
 
     public function _initialize(){
-
-        $this->manangerData = D('Manager','Data');
+        $this->managerAccountLogic = D('ManagerAccount','Logic');
     }
-
-
 
     function index(){
         $this->display("login");
