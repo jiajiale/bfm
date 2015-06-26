@@ -44,3 +44,32 @@ function get_page_para($pageIndex = null, $pageSize = null)
     $pagePara->pageSize = $pageSize;
     return $pagePara;
 }
+
+/**
+ * 数据签名
+ * @param $data
+ * @return string
+ */
+function data_auth_sign($data) {
+    //数据类型检测
+    if(!is_array($data)){
+        $data = (array)$data;
+    }
+    ksort($data); //排序
+    $code = http_build_query($data); //url编码并生成query字符串
+    $sign = sha1($code); //生成签名
+    return $sign;
+}
+
+/**
+ * 判断管理员是否登录
+ * @return int
+ */
+function is_login(){
+    $manager = session('manager_auth');
+    if (empty($manager)) {
+        return 0;
+    } else {
+        return session('manager_auth_sign') == data_auth_sign($manager) ? $manager['id'] : 0;
+    }
+}

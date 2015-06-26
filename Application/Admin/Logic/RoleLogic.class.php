@@ -13,9 +13,11 @@ class RoleLogic extends BaseLogic{
 
     /**
      * @var \Admin\Data\RoleData
-     * @var \Admin\Data\RolePermissionRelationLogic
      */
     protected $roleData;
+    /**
+     * @var \Admin\Logic\RolePermissionRelationLogic
+     */
     protected $rolePermissionRelationLogic;
 
     public function _initialize(){

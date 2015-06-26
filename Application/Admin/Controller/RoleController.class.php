@@ -14,11 +14,15 @@ class RoleController extends BaseController{
 
     /**
      * @var \Admin\Logic\RoleLogic
-     * @var \Admin\Logic\PermissionLogic
-     * @var \Admin\Logic\RolePermissionRelationLogic
      */
     protected $roleLogic;
+    /**
+     * @var \Admin\Logic\PermissionLogic
+     */
     protected $permissionLogic;
+    /**
+     * @var \Admin\Logic\RolePermissionRelationLogic
+     */
     protected $rolePermissionRelationLogic;
 
     public function _initialize(){

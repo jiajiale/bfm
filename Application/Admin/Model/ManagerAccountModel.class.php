@@ -16,6 +16,15 @@ class ManagerAccountModel extends BaseModel{
         array('gmt_create', 'time', self::MODEL_INSERT, 'function'),
         array('gmt_last_login', 'time', self::MODEL_INSERT, 'function'),
         array('last_ip', 'get_client_ip', self::MODEL_INSERT, 'function'),
-        array('password', 'hash_password', self::MODEL_BOTH, 'function'),
+        array('password', 'encryptPassword', self::MODEL_BOTH, 'callback'),
     );
+
+    /**
+     * 密码加密
+     * @param $fields
+     * @return string
+     */
+    protected function encryptPassword($fields){
+        return hash_password($fields,C('PASSWORD_SALT_KEY'));
+    }
 }

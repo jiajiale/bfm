@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>欢迎登录后台管理系统</title>
+    <link  rel="stylesheet" type="text/css" href="__CSS__/style.css"/>
+    <script type="text/javascript" src="__JS__/jquery.js"></script>
+    <script type="text/javascript">
+        var GV = {
+            JS_ROOT: "__JS__/",
+            JS_VERSION: "20141001"
+        };
+    </script>
+    <script type="text/javascript" src="__JS__/Wind.js"></script>
+    <script type="text/javascript" src="__JS__/common.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+    <div id="error_tips">
+        <div>错误信息</div>
+
+        <div class="error_cont">
+            <div class="error_content"><?php echo($error); ?></div>
+            <div class="error_return"><a href="javascript:window.history.go(-1);" class="btn">返回</a></div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="system-message">
+<h1>抱歉,出错啦!</h1>
+<p class="error"><?php echo($error); ?></p>
+<p class="detail"></p>
+<p class="jump">
+<b id="wait"><?php echo($waitSecond); ?></b> 秒后页面将自动跳转
+</p>
+<div>
+    <a id="href" id="btn-now" href="<?php echo($jumpUrl); ?>">立即跳转</a> 
+    <button id="btn-stop" type="button" onclick="stop()">停止跳转</button> 
+    <a id="href" id="btn-now" href="<?php echo(U('Public/logout')); ?>">重新登录</a> 
+</div>
+</div>
+<script type="text/javascript">
+(function(){
+ var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+ var interval = setInterval(function(){
+     	var time = --wait.innerHTML;
+     	if(time <= 0) {
+     		location.href = href;
+     		clearInterval(interval);
+     	};
+     }, 1000);
+  window.stop = function (){
+         console.log(111);
+            clearInterval(interval);
+ }
+ })();
+</script>
+-->
+
+</body>
+</html>

@@ -4,9 +4,20 @@ use Think\Controller;
 
 class BaseController extends Controller {
 
+    /**
+     * @var \Admin\Logic\MenuLogic
+     */
+    protected $menuLogic;
+    /**
+     * @var \Admin\Logic\ManagerAccountLogic
+     */
+    protected $managerAccountLogic;
+
     public function __construct(){
         parent::__construct();
 
+        $this->menuLogic = D('Menu','Logic');
+        $this->managerAccountLogic = D('ManagerAccount','Logic');
         $this->check_login();
     }
 
@@ -34,6 +45,8 @@ class BaseController extends Controller {
      * 成功返回
      * @param null $data
      * @param string $msg
+     * @param string $referer
+     * @param int $code
      */
     public function ajaxSuccess($data = null, $msg = '',$referer = '', $code = 200 )
     {
@@ -52,6 +65,7 @@ class BaseController extends Controller {
     /**
      * 失败返回
      * @param string $msg
+     * @param string $referer
      * @param int $code
      */
     public function ajaxError($msg = '', $referer = '', $code = 300)
@@ -70,7 +84,8 @@ class BaseController extends Controller {
     /**
      * 自动定向成功失败
      * @param $flag
-     * @param $msg
+     * @param string $msg
+     * @param string $referer
      */
     public function ajaxAuto($flag,$msg = '操作',$referer = ''){
         if($flag !== false){
@@ -80,13 +95,18 @@ class BaseController extends Controller {
         }
     }
 
-
-    final public function check_login(){
-        $manager = session('manager_auth');
-        if (empty($manager)) {
-            //$this->redirect('public/index');
-        } else {
-           // return session('user_auth_sign') == data_auth_sign($user) ? $user['uid'] : 0;
+    /**
+     * 检查管理员是否登录
+     */
+    protected function check_login(){
+        if($mid = is_login()){
+            $managerData = $this->managerAccountLogic->getById($mid);
+            $menuTree = $this->menuLogic->getMenuTreeByRoleId($managerData['role_id']);
+            $this->assign('menuTree',$menuTree);
+            $this->assign('managerData',$managerData);
+        }else {
+            $error = '请先登录！';
+            $this->error($error,'Public/index');
         }
     }
 

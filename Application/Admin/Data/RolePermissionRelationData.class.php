@@ -65,7 +65,11 @@ class RolePermissionRelationData extends BaseData{
         return $data;
     }
 
-
+    /**
+     * 根据角色id查找权限
+     * @param $roleId
+     * @return mixed
+     */
     public function getRolePermissions($roleId){
         $data = $this->table('__ROLE_PERMISSION_RELATION__ AS relation')
             ->field('relation.*')

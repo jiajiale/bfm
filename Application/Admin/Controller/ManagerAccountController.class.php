@@ -13,10 +13,12 @@ class ManagerAccountController extends BaseController{
 
 
     /**
-     * @var \Admin\Logic\RoleLogic
      * @var \Admin\Logic\ManagerAccountLogic
      */
     protected $managerAccountLogic;
+    /**
+     * @var \Admin\Logic\RoleLogic
+     */
     protected $roleLogic;
 
     public function _initialize(){

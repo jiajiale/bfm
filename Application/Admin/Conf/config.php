@@ -1,7 +1,9 @@
 <?php
 return array(
     'DEFAULT_THEME'     =>    'Default', //后台模板主题
-//    'TMPL_ENGINE_TYPE'  =>    'Smarty',
+    //'TMPL_ENGINE_TYPE'  =>    'Smarty',
+    'TMPL_ACTION_ERROR' => 'Public:error',    //错误页面
+    'TMPL_ACTION_SUCCESS' => 'Public:success',      //成功页面
 
     //模板静态文件路径解析
     'TMPL_PARSE_STRING' => array (

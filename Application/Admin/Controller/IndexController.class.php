@@ -5,31 +5,29 @@ namespace Admin\Controller;
 class IndexController extends BaseController {
 
     /**
-     * @var \Admin\Logic\MenuLogic
+     * 主页视图
      */
-    protected $menuLogic;
-
-    public function _initialize(){
-        $this->menuLogic = D('Menu','Logic');
-    }
-
     public function index(){
-        $menuTree = $this->menuLogic->getMenuTreeByRoleId(1);
-
-        $this->assign('menuTree',$menuTree);
         $this->display();
     }
 
-
+    /**
+     * 菜单视图
+     */
     public function left(){
         $this->display();
     }
 
+    /**
+     * 顶部视图
+     */
     public function top(){
         $this->display();
     }
 
-
+    /**
+     * 内容区视图
+     */
     public function main(){
         $this->display();
     }

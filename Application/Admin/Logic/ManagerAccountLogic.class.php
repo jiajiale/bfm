@@ -81,4 +81,61 @@ class ManagerAccountLogic extends BaseLogic{
         return $ManagerAccount->delete($id);
     }
 
+    /**
+     * 管理员登陆
+     * @param $username
+     * @param $password
+     * @return int
+     */
+    public function login($username, $password){
+        $ManagerAccount = D('ManagerAccount');
+        $map = array();
+        $map['username'] = $username;
+
+        $manager = $ManagerAccount->where($map)->find();
+        if(is_array($manager) && $manager['status']){
+            if(hash_password($password, C('PASSWORD_SALT_KEY')) === $manager['password']){
+                $this->autoLogin($manager);
+                return $manager['id']; //登录成功，返回用户ID
+            } else {
+                return -2; //密码错误
+            }
+        } else {
+            return -1; //用户不存在或被禁用
+        }
+    }
+
+    /**
+     * 登录管理员
+     * @param $manager
+     */
+    protected function autoLogin($manager){
+        $ManagerAccount = D('ManagerAccount');
+
+        /* 更新登录信息 */
+        $data = array(
+            'uid'             => $manager['id'],
+            'gmt_last_login'  => NOW_TIME,
+            'last_ip'         => get_client_ip(1),
+        );
+        $ManagerAccount->save($data);
+
+        /* 记录登录SESSION和COOKIES */
+        $auth = array(
+            'id'              => $manager['id'],
+            'username'        => $manager['username'],
+            'gmt_last_login'  => $manager['gmt_last_login'],
+        );
+
+        session('manager_auth', $auth);
+        session('manager_auth_sign', data_auth_sign($auth));
+    }
+
+    /**
+     * 注销当前用户
+     */
+    public function logout(){
+        session('manager_auth', null);
+        session('manager_auth_sign', null);
+    }
 }
