@@ -106,7 +106,9 @@ class MenuData extends BaseData{
                     bfm_role AS role ON role.id = relation.role_id
                 WHERE
                     menu1.path LIKE CONCAT(menu.path,'%')
-                AND relation.role_id = " . $id;
+                AND relation.role_id = " . $id ."
+                ORDER BY menu.sort ASC
+                ";
 
         $data = $this->query($sql);
         return $data;

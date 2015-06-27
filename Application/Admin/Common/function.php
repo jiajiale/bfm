@@ -73,3 +73,4 @@ function is_login(){
         return session('manager_auth_sign') == data_auth_sign($manager) ? $manager['id'] : 0;
     }
 }
+

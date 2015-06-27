@@ -125,6 +125,7 @@ class ManagerAccountLogic extends BaseLogic{
             'id'              => $manager['id'],
             'username'        => $manager['username'],
             'gmt_last_login'  => $manager['gmt_last_login'],
+            'role_id'         => $manager['role_id']
         );
 
         session('manager_auth', $auth);

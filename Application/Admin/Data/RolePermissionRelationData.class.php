@@ -72,7 +72,8 @@ class RolePermissionRelationData extends BaseData{
      */
     public function getRolePermissions($roleId){
         $data = $this->table('__ROLE_PERMISSION_RELATION__ AS relation')
-            ->field('relation.*')
+            ->field('relation.*,permission.code')
+            ->join('__PERMISSION__ AS permission ON permission.id = relation.permission_id')
             ->where('role_id = %d',$roleId)
             ->select();
 

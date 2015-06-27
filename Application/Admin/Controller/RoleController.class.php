@@ -73,6 +73,7 @@ class RoleController extends BaseController{
         $role_permissions = array_column(
             $this->rolePermissionRelationLogic->getRolePermissions($id),'permission_id');
 
+        // 获取所有的模块
         $modules = $this->permissionLogic->getModules();
         $role = $this->roleLogic->getById($id);
 

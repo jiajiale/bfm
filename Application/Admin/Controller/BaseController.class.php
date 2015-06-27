@@ -13,12 +13,20 @@ class BaseController extends Controller {
      */
     protected $managerAccountLogic;
 
+    /**
+     * @var \Admin\Logic\RolePermissionRelationLogic
+     */
+    protected $rolePermissionRelationLogic;
+
     public function __construct(){
         parent::__construct();
 
         $this->menuLogic = D('Menu','Logic');
         $this->managerAccountLogic = D('ManagerAccount','Logic');
+        $this->rolePermissionRelationLogic = D('RolePermissionRelation', 'Logic');
+
         $this->check_login();
+        $this->check_priv();
     }
 
     /**
@@ -110,4 +118,25 @@ class BaseController extends Controller {
         }
     }
 
+    /**
+     * 检查用户的权限
+     */
+    protected function check_priv(){
+        $manager = session('manager_auth');
+        $permission = strtolower(CONTROLLER_NAME.'_'.str_replace('do_','',ACTION_NAME));
+
+        // 获取用户的权限
+        $role_permissions = array_column(
+            $this->rolePermissionRelationLogic->getRolePermissions($manager['role_id']),'code');
+
+        if(!in_array($permission,$role_permissions) && !in_array($permission,array('index_index'))){
+            $error = '没有权限';
+            $this->error($error,'public/index');
+        }
+
+    }
+
+    protected function getCrumbs(){
+//        $url =
+    }
 }

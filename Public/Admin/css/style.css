@@ -989,33 +989,6 @@ a:hover {
     padding: 20px;
 }
 
-
-/*
-===================
-面包屑样式
-===================
-*/
-.crumbs{
-    height:40px;
-    background:url(../images/righttop.gif) repeat-x;
-}
-.crumbs span{
-    line-height:40px;
-    font-weight:bold;
-    float:left;
-    margin-left:12px;
-}
-.crumbs ul li{
-    float:left;
-    line-height:40px;
-    padding-left:7px;
-    padding-right:12px;
-    background:url(../images/rlist.gif) no-repeat right;
-}
-.crumbs ul li:last-child{
-    background:none;
-}
-
 /*
 ===================
 主选项卡
@@ -1052,7 +1025,16 @@ a:hover {
     line-height:30px;
 }
 
-.tools{clear:both; height:35px; margin-bottom:8px;}
+.tools{
+    clear:both;
+}
+.toolbar li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.toolbar li a{
+    margin-bottom:15px;
+}
 /*
 ===================
 标题栏组
